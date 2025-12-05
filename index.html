@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="gu">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  Gj 11 Team Studio</title>
@@ -13,25 +14,7 @@
             line-height: 1.6;
             color: #333;
         }
-        <script>
-  window.addEventListener('scroll', reveal);
-
-  function reveal() {
-    var reveals = document.querySelectorAll('.reveal');
-
-    for (var i = 0; i < reveals.length; i++) {
-      var windowheight = window.innerHeight;
-      var revealtop = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 150;
-
-      if (revealtop < windowheight - revealpoint) {
-        reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
-    }
-  }
-</script>
+        
             
         
         /* Navigation */
@@ -133,6 +116,7 @@
     </style>
 </head>
 <body>
+    
 
     <header>
         <nav>
@@ -200,4 +184,23 @@
     </div>
 
 </body>
+        <script>
+  window.addEventListener('scroll', reveal);
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if (revealtop < windowheight - revealpoint) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+        </script>
 </html>
