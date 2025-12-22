@@ -113,6 +113,16 @@
             nav ul { margin-top: 10px; }
             .hero h2 { font-size: 2rem; }
         }
+        video {
+  width: 300%;       /* Screen ki poori width lega */
+  max-width: 300px;  /* Video 800px se badi nahi hogi */
+  height: auto;      /* Aspect ratio barqarar rahega */
+  display: block;
+  margin: 0 auto;    /* Video ko center mein karne ke liye */
+  border-radius: 10px; /* Kinaro ko gol karne ke liye */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow ke liye */
+}
+
     </style>
 </head>
 <body>
@@ -181,7 +191,8 @@
   <video autoplay muted loop playsinline id="bg-video">
     <source src="VN20251222_083943.mp4" type="video/mp4">
   </video>
-  <div class="content">
+
+                <div class="content">
     <h1>Welcome to My Website</h1>
   </div>
 </div>
