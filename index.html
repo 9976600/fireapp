@@ -122,16 +122,17 @@
   border-radius: 10px; /* Kinaro ko gol karne ke liye */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow ke liye */
 }
-        var vid = document.getElementById("VN20251222_083943.mp4"); 
+ #muteBtn {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
 
-function playVid() { 
-  vid.play(); 
-} 
 
-function pauseVid() { 
-  vid.pause(); 
-            }
-            
 
     </style>
 </head>
@@ -199,10 +200,12 @@ function pauseVid() {
   
 <div class="video-container">
   <video autoplay muted loop playsinline id="bg-video">
-    <source src="VN20251222_083943.mp4" type="video/mp4"
-        <button onclick="playVid()">Play</button>
-<button onclick="pauseVid()">Pause</button>>
-  </video> </div>
+    <source src="VN20251222_083943.mp4" type="video/mp4">
+        
+  </video>
+    <button id="muteBtn" onclick="toggleMute()">Unmute</button>
+</div>
+</div>
 
     
 
